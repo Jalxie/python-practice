@@ -39,9 +39,9 @@ mycursor = mydb.cursor()
 
 
 # 激活码生成
-def activation_code(count, length):    
-    # count 数量    
-    # length 长度    
+def activation_code(count, length):
+    # count 数量
+    # length 长度
     base = string.ascii_uppercase + string.ascii_lowercase + string.digits    # 生成激活码可能包含的字符集（大写字母、小写字母、数字）
     return [''.join(random.sample(base, length)) for i in range(count)]
 
@@ -56,5 +56,6 @@ for n in promotioncode:
 	mydb.commit()
 
 
-
-
+##I add the first change
+##add again
+##third change
